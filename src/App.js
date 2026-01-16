@@ -12,6 +12,7 @@ import { useEffect, useState } from 'react'
 
 function App() {
   const [pokemon, setPokemon] = useState([])
+  const [filteredPokemon, setFilteredPokemon] = useState([])
 
   useEffect(()=>{
     fetch("http://localhost:3002/pokemon")
@@ -19,14 +20,27 @@ function App() {
     .then((json) => {
       console.log(json)
       setPokemon(json)
+      setFilteredPokemon(json)
     })
 
   }, [])
 
+  function searchPokemonByName(name) {
+    console.log("clicked")
+    console.log(name)
+     let newPokemon = pokemon.filter((pok) => pok.name === name)
+     console.log(newPokemon)
+   setFilteredPokemon(newPokemon)
+}
+
+function showAllPokemon() {
+  setFilteredPokemon(pokemon)
+}
+
 
   return (
     <div className="App">
-      <PokemonPage pokemon={pokemon}></PokemonPage>
+      <PokemonPage showAllPokemon={showAllPokemon} searchPokemonByName={searchPokemonByName} pokemon={filteredPokemon}></PokemonPage>
 
     </div>
   )
