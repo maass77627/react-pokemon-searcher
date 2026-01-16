@@ -1,27 +1,35 @@
 import React from 'react'
 import { Card } from 'semantic-ui-react'
+import { useState } from "react";
 
-class PokemonCard extends React.Component {
-  render() {
+// class PokemonCard extends React.Component {
+  // render() {
+  function PokemonCard({pokemon}) {
+    const [cardToggle, setCardToggle] = useState(true)
+    
+    function changeToggle() {
+      setCardToggle(!cardToggle)
+    }
+    
     return (
       <Card>
-        <div>
+        <div onClick={changeToggle}>
           <div className="image">
-            <img alt="oh no!" />
+            <img src={cardToggle ? pokemon.sprites.front : pokemon.sprites.back } alt="oh no!" />
           </div>
           <div className="content">
-            <div className="header">POKEMON NAME HERE</div>
+            <div className="header">{pokemon.name}</div>
           </div>
           <div className="extra content">
             <span>
               <i className="icon heartbeat red" />
-              POKEMON HP HERE hp
+              {pokemon.hp}
             </span>
           </div>
         </div>
       </Card>
     )
   }
-}
+// }
 
 export default PokemonCard

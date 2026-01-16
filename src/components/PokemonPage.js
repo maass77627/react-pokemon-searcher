@@ -4,8 +4,14 @@ import PokemonForm from './PokemonForm'
 import Search from './Search'
 import { Container } from 'semantic-ui-react'
 
-class PokemonPage extends React.Component {
-  render() {
+// class PokemonPage extends React.Component {
+function PokemonPage ({pokemon}) {
+  // render() {
+
+
+
+
+
     return (
       <Container>
         <h1>Pokemon Searcher</h1>
@@ -14,10 +20,10 @@ class PokemonPage extends React.Component {
         <br />
         <Search />
         <br />
-        <PokemonCollection />
+        <PokemonCollection pokemon={pokemon} />
       </Container>
     )
   }
-}
+
 
 export default PokemonPage

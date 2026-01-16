@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Search = props => {
+// const Search = props => {
+  function Search({}) {
   return (
     <div className="ui search">
       <div className="ui icon input">
