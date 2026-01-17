@@ -9,7 +9,7 @@ import { useState } from "react"
        setName(e.target.value)
     }
 
-    // onClick={searchPokemonByName(name)}
+    
   return (
     <div className="ui search">
       <div className="ui icon input">

@@ -37,10 +37,15 @@ function showAllPokemon() {
   setFilteredPokemon(pokemon)
 }
 
+function addNewPokemon(pokemon) {
+  setPokemon([...pokemon, pokemon])
+
+
+}
 
   return (
     <div className="App">
-      <PokemonPage showAllPokemon={showAllPokemon} searchPokemonByName={searchPokemonByName} pokemon={filteredPokemon}></PokemonPage>
+      <PokemonPage addNewPokemon={addNewPokemon} showAllPokemon={showAllPokemon} searchPokemonByName={searchPokemonByName} pokemon={filteredPokemon}></PokemonPage>
 
     </div>
   )

@@ -1340,6 +1340,33 @@
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png"
       }
+    },
+    {
+      "name": "Bulbasaur",
+      "hp": 7,
+      "sprites": {
+        "front": "https://assetsio.reedpopcdn.com/bulbasaur_1.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
+        "back": "https://th.bing.com/th/id/OIP.FurVjxMpw_oFI-jhBBUVNAAAAA?w=80&h=80&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      },
+      "id": 151
+    },
+    {
+      "name": "Bulbasaur",
+      "hp": 7,
+      "sprites": {
+        "front": "https://assetsio.reedpopcdn.com/bulbasaur_1.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
+        "back": "https://th.bing.com/th/id/OIP.FurVjxMpw_oFI-jhBBUVNAAAAA?w=80&h=80&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      },
+      "id": 152
+    },
+    {
+      "name": "Bulbasaur",
+      "hp": 7,
+      "sprites": {
+        "front": "https://assetsio.reedpopcdn.com/bulbasaur_1.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
+        "back": "https://th.bing.com/th/id/OIP.FurVjxMpw_oFI-jhBBUVNAAAAA?w=80&h=80&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      },
+      "id": 153
     }
   ]
 }

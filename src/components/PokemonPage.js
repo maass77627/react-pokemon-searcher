@@ -5,7 +5,7 @@ import Search from './Search'
 import { Container } from 'semantic-ui-react'
 
 // class PokemonPage extends React.Component {
-function PokemonPage ({pokemon, searchPokemonByName, showAllPokemon}) {
+function PokemonPage ({pokemon, searchPokemonByName, showAllPokemon, addNewPokemon}) {
   // render() {
 
 
@@ -16,7 +16,7 @@ function PokemonPage ({pokemon, searchPokemonByName, showAllPokemon}) {
       <Container>
         <h1>Pokemon Searcher</h1>
         <br />
-        <PokemonForm />
+        <PokemonForm addNewPokemon={addNewPokemon} />
         <br />
         <Search showAllPokemon={showAllPokemon} searchPokemonByName={searchPokemonByName} />
         <br />
